@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const SidebarItem = ({ icon, text }) => (
   <li className="mx-3.5 mt-4 mb-2">
@@ -79,6 +79,11 @@ const Sidebar = () => {
 
     </aside>
   );
+};
+
+SidebarItem.propTypes = {
+  icon: PropTypes.node.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Sidebar;
