@@ -15,12 +15,14 @@ const Sidebar = () => {
   return (
     <aside className="bg-[#232323] -translate-x-80 fixed inset-0 z-50 h-screen w-72 overflow-y-auto rounded-r-lg transition-transform duration-300 xl:translate-x-0">
       <div className="relative">
-        <a className="flex items-center gap-4 py-6 px-8" href="#/">
+        <a className="flex items-center gap-4 py-6 px-8" href="#">
+          <img src="/Layer 1.png" alt="Logo" className="w-10 h-10" />
           <h6 className="block antialiased text-xl tracking-normal font-sans font-semibold leading-relaxed text-white">
             Chat<span className="text-xl font-bold">DB</span>
           </h6>
         </a>
       </div>
+
 
       <div className="m-4">
         <ul className="mb-2 flex flex-col">
