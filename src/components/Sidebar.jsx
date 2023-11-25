@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const SidebarItem = ({ icon, text }) => (
-  <li className="mx-3.5 mt-4 mb-2">
+  <li className="mx-3 mt-4">
     <a href="#">
       <button className="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 w-full flex items-center gap-4 px-4 capitalize" type="button">
         <span>{icon}</span>
@@ -35,7 +35,7 @@ const Sidebar = () => {
 
       <div className="m-4">
         <ul className="mb-2 flex flex-col">
-          <li className="mx-3.5 mt-4 mb-2">
+          <li className="mx-3 mt-4 mb-2">
             <p className="antialiased font-sans text-[12px]  text-white font-black  opacity-50">
               Today
             </p>
@@ -77,8 +77,6 @@ const Sidebar = () => {
           />
         </ul>
       </div>
-
-
     </aside>
   );
 };
