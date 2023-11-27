@@ -1,5 +1,5 @@
 import Sidebar from "./Sidebar"
-
+import { Link } from 'react-router-dom';
 
 const Screen = () => {
   return (
@@ -86,11 +86,11 @@ const Screen = () => {
                     className="w-full bg-white placeholder:font-italitc border border-slate-300 rounded-full py-4 pl-10 pr-4 focus:outline-none"
                     placeholder="Message ChatDB......" type="text" />
                   
-                  <span className="absolute inset-y-0 right-0 flex items-center pr-4 border-2  p-4 m-2 mx-5 rounded-xl bg-[#ECECED] ">
+                  <Link to="/screen2" className="absolute inset-y-0 right-0 flex items-center pr-4 border-2  p-4 m-2 mx-5 rounded-xl bg-[#ECECED] ">
                     <svg className="w-[18px] h-[18px] fill-[#000000]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
                       <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
                     </svg>
-                  </span>
+                  </Link>
                 </label>
               </form>
             </div>
